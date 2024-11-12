@@ -1,0 +1,43 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Student",
+            "request": "launch",
+            "mainClass": "Student",
+            "projectName": "revature-study_269a1e95"
+        },
+        {
+            "type": "java",
+            "name": "StudyGuide",
+            "request": "launch",
+            "mainClass": "StudyGuide",
+            "projectName": "revature-study_269a1e95"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch",
+            "console": "integratedTerminal",
+            "program": "${file}"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Mocha Tests",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "-u",
+                "bdd",
+                "--timeout",
+                "999999",
+                "--colors",
+                "${workspaceFolder}/test"
+            ],
+            "internalConsoleOptions": "openOnSessionStart",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        }
+    ]
+}
